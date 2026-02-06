@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgriPulse | Quantum Mandi Intelligence</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="particles">
+        <div class="blob"></div>
+        <div class="blob-2"></div>
+    </div>
+
+    <header>
+        <div class="logo">AGRI<span>PULSE</span> ANALYTICS</div>
+        <nav>
+            <a href="#intelligence">Intelligence</a>
+            <a href="#ai-forecast">AI Forecast</a>
+            <a href="#infrastructure">Infrastructure</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#access">Access</a>
+        </nav>
+    </header>
+
+    <div class="market-ticker">
+        <div class="ticker-content">
+            <div class="ticker-item">ORANGE (NAGPUR) <span>4,250 ▲</span></div>
+            <div class="ticker-item">SOYBEAN (AKOLA) <span style="color: #ef4444;">5,120 ▼</span></div>
+            <div class="ticker-item">COTTON (AMRAVATI) <span>7,840 ▲</span></div>
+            <div class="ticker-item">WHEAT (PUNE) <span>2,650 ▲</span></div>
+            <div class="ticker-item">TUR (LATUR) <span style="color: #ef4444;">8,900 ▼</span></div>
+            <div class="ticker-item">CHANA (INDORE) <span>5,420 ▲</span></div>
+            <!-- Duplicate for seamless loop -->
+            <div class="ticker-item">ORANGE (NAGPUR) <span>4,250 ▲</span></div>
+            <div class="ticker-item">SOYBEAN (AKOLA) <span style="color: #ef4444;">5,120 ▼</span></div>
+        </div>
+    </div>
+
+    <section class="hero">
+        <div class="reveal">
+            <div class="badge">National Oracle v3.0 Active</div>
+            <h1 style="position: relative;">Neural Markets.<br>National Pulse.
+                <div
+                    style="position: absolute; top: 0; left: 0; width: 100%; height: 2px; background: var(--primary); box-shadow: 0 0 20px var(--primary); animation: scan 4s infinite linear; opacity: 0.3;">
+                </div>
+            </h1>
+            <p>Direct low-latency access to 3,000+ Indian Mandis. Powered by XGBoost AI for 7-day predictive
+                intelligence.
+            </p>
+            <div class="cta-container" style="justify-content: center;">
+                <a href="#access" class="btn btn-primary">Start Enterprise Integration</a>
+                <a href="#pricing" class="btn btn-secondary">View Licensing</a>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        @keyframes scan {
+            0% {
+                top: 0;
+            }
+
+            50% {
+                top: 100%;
+            }
+
+            100% {
+                top: 0;
+            }
+        }
+    </style>
+
+    <section class="partners reveal">
+        <div
+            style="font-size: 0.75rem; color: var(--text-dim); text-transform: uppercase; letter-spacing: 2px; margin-bottom: 2rem; font-weight: 700;">
+            Infrastructure Integrations</div>
+        <div class="partner-grid">
+            <div class="partner-logo">
+                AGMARKNET DATA
+                <div class="source-stat">CONNECTED: 3.2MB/s</div>
+            </div>
+            <div class="partner-logo">
+                MSAMB BRIDGE
+                <div class="source-stat">ACTIVE: 1.1s PING</div>
+            </div>
+            <div class="partner-logo">
+                VIDARBHA NODES
+                <div class="source-stat">ONLINE: 42 NODES</div>
+            </div>
+            <div class="partner-logo">
+                SSL-ENC FEED
+                <div class="source-stat" style="color: #6366f1; background: rgba(99, 102, 241, 0.1);">SECURE (AES-256)
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI FORECAST SECTION -->
+    <section id="ai-forecast" class="market-intelligence reveal">
+        <div class="section-header">
+            <div class="badge" style="margin-bottom: 1rem;">Neural Edge™</div>
+            <h2>AI Price Forecasting</h2>
+            <p>Our CUDA-accelerated XGBoost models analyze 90-day sentiment and volume trends to deliver 7-day price
+                projections.</p>
+        </div>
+
+        <div class="grid" style="padding: 0; margin-bottom: 4rem;">
+            <div class="card" style="padding: 2rem;" id="forecast-soybean">
+                <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 2rem;">
+                    <div>
+                        <h4 style="color: white; font-size: 1.25rem;">Soybean (Indore)</h4>
+                        <p style="font-size: 0.8rem;" class="current-price">Loading...</p>
+                    </div>
+                    <div class="source-stat confidence-badge">ANALYZING...</div>
+                </div>
+                <!-- Mini Chart Visualization -->
+                <div class="chart-viz"
+                    style="height: 120px; display: flex; align-items: flex-end; gap: 8px; margin-bottom: 1.5rem;">
+                    <!-- Dynamically Populated -->
+                </div>
+                <p style="font-size: 0.9rem; color: var(--primary); font-weight: 700; margin-bottom: 1.5rem;"
+                    class="prediction-text">
+                    CALCULATING...</p>
+                <div style="display: flex; gap: 10px;">
+                    <button class="btn btn-secondary" style="padding: 0.5rem 1rem; font-size: 0.8rem; flex: 1;"
+                        onclick="handlePredict('Soybean', 'Indore')">Predict Price</button>
+                    <button class="btn btn-secondary" style="padding: 0.5rem 1rem; font-size: 0.8rem; flex: 1;"
+                        onclick="handleMandi('Soybean', 'Indore')">Get Mandi</button>
+                </div>
+            </div>
+
+            <div class="card" style="padding: 2rem;" id="forecast-cotton">
+                <div style="display: flex; justify-content: space-between; align-items: start; margin-bottom: 2rem;">
+                    <div>
+                        <h4 style="color: white; font-size: 1.25rem;">Cotton (Amravati)</h4>
+                        <p style="font-size: 0.8rem;" class="current-price">Loading...</p>
+                    </div>
+                    <div class="source-stat confidence-badge">ANALYZING...</div>
+                </div>
+                <div class="chart-viz"
+                    style="height: 120px; display: flex; align-items: flex-end; gap: 8px; margin-bottom: 1.5rem;">
+                    <!-- Dynamically Populated -->
+                </div>
+                <p style="font-size: 0.9rem; color: #ef4444; font-weight: 700; margin-bottom: 1.5rem;"
+                    class="prediction-text">CALCULATING...
+                </p>
+                <div style="display: flex; gap: 10px;">
+                    <button class="btn btn-secondary" style="padding: 0.5rem 1rem; font-size: 0.8rem; flex: 1;"
+                        onclick="handlePredict('Cotton', 'Amravati')">Predict Price</button>
+                    <button class="btn btn-secondary" style="padding: 0.5rem 1rem; font-size: 0.8rem; flex: 1;"
+                        onclick="handleMandi('Cotton', 'Amravati')">Get Mandi</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- INTELLIGENCE SECTION -->
+    <section id="intelligence" class="market-intelligence reveal">
+        <div class="section-header">
+            <h2>National Intelligence</h2>
+            <p>Unified coverage of 3,000+ Indian mandis. Deep regional tracking from Vidarbha to Malwa.</p>
+        </div>
+
+        <div class="commodity-grid">
+            <div class="commodity-item">
+                <span class="commodity-icon">🟠</span>
+                <div>
+                    <h4 style="color: white;">Orange</h4>
+                    <p style="font-size: 0.8rem; color: var(--text-dim);">Live: Nagpur Mandi</p>
+                </div>
+            </div>
+            <div class="commodity-item">
+                <span class="commodity-icon">☁️</span>
+                <div>
+                    <h4 style="color: white;">Cotton</h4>
+                    <p style="font-size: 0.8rem; color: var(--text-dim);">Live: Amravati Mandi</p>
+                </div>
+            </div>
+            <div class="commodity-item">
+                <span class="commodity-icon">🌱</span>
+                <div>
+                    <h4 style="color: white;">Soybean</h4>
+                    <p style="font-size: 0.8rem; color: var(--text-dim);">Live: Akola Mandi</p>
+                </div>
+            </div>
+            <div class="commodity-item">
+                <span class="commodity-icon">🌾</span>
+                <div>
+                    <h4 style="color: white;">Wheat</h4>
+                    <p style="font-size: 0.8rem; color: var(--text-dim);">Live: Pune Mandi</p>
+                </div>
+            </div>
+            <div class="commodity-item">
+                <span class="commodity-icon">🥣</span>
+                <div>
+                    <h4 style="color: white;">Arhar (Tur)</h4>
+                    <p style="font-size: 0.8rem; color: var(--text-dim);">Live: Latur Mandi</p>
+                </div>
+            </div>
+            <div class="commodity-item" style="border-style: dashed; opacity: 0.6;">
+                <span class="commodity-icon">➕</span>
+                <div>
+                    <h4 style="color: white;">35+ More</h4>
+                    <p style="font-size: 0.8rem; color: var(--text-dim);">Enterprise Only</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRICING SECTION -->
+    <section id="pricing" class="pricing-section reveal">
+        <div class="section-header" style="text-align: center; margin: 0 auto;">
+            <h2>Licensing & Access</h2>
+            <p>Flexible scaling for startups to enterprise-grade trading floors.</p>
+        </div>
+
+        <div class="pricing-grid">
+            <div class="pricing-card">
+                <h4 style="color: var(--primary);">DEVELOPER</h4>
+                <div class="price">Free<span>/month</span></div>
+                <ul class="feat-list">
+                    <li>100 Daily API Calls</li>
+                    <li>2 Standard Mandis</li>
+                    <li>Community Support</li>
+                </ul>
+                <a href="#access" class="btn btn-secondary" style="width: 100%; justify-content: center;">Get
+                    Started</a>
+            </div>
+            <div class="pricing-card featured">
+                <h4 style="color: var(--primary);">PROFESSIONAL</h4>
+                <div class="price">$49<span>/month</span></div>
+                <ul class="feat-list">
+                    <li>3,000+ National Mandis</li>
+                    <li>7-Day AI Price Forecasting</li>
+                    <li>GTX 1660 Ti Optimized Feeds</li>
+                    <li>Full historical DB Access</li>
+                </ul>
+                <a href="#access" class="btn btn-primary" style="width: 100%; justify-content: center;">Secure
+                    License</a>
+            </div>
+            <div class="pricing-card">
+                <h4 style="color: var(--primary);">ENTERPRISE</h4>
+                <div class="price">Custom</div>
+                <ul class="feat-list">
+                    <li>Unlimited Oracle Access</li>
+                    <li>Ghost-Node Priority</li>
+                    <li>7-Day Historical Data</li>
+                    <li>Dedicated Infrastructure</li>
+                </ul>
+                <a href="#access" class="btn btn-secondary" style="width: 100%; justify-content: center;">Contact
+                    Sales</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- INFRASTRUCTURE SECTION -->
+    <section id="infrastructure" class="market-intelligence reveal" style="padding-top: 2rem;">
+        <div class="section-header">
+            <h2>System Infrastructure</h2>
+            <p>Military-grade data procurement and delivery network.</p>
+        </div>
+
+        <div class="status-bar">
+            <div class="status-item">
+                <div class="status-indicator"></div>
+                <span style="font-size: 0.85rem; font-weight: 600;">ORACLE CORE: ONLINE</span>
+            </div>
+            <div class="status-item">
+                <span style="font-size: 0.85rem; color: var(--text-dim);">LATENCY: <span
+                        style="color: var(--primary);">142ms</span></span>
+            </div>
+            <div class="status-item">
+                <span style="font-size: 0.85rem; color: var(--text-dim);">UPTIME: <span
+                        style="color: var(--primary);">99.98%</span></span>
+            </div>
+        </div>
+
+        <div class="grid" style="padding: 0;">
+            <div class="card reveal">
+                <div class="card-icon">⚡</div>
+                <h3>Quantum Feed</h3>
+                <p>Optimized data packets delivered via SSE protocol for millisecond decision making.</p>
+            </div>
+            <div class="card reveal" style="transition-delay: 0.1s;">
+                <div class="card-icon">🧠</div>
+                <h3>Oracle Nodes</h3>
+                <p>Our autonomous scraper network processes millions of data points with high fidelity.</p>
+            </div>
+            <div class="card reveal" style="transition-delay: 0.2s;">
+                <div class="card-icon">🛡️</div>
+                <h3>Ghost Protocols</h3>
+                <p>Self-healing infrastructure that bypasses network congestion and downtime.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="access" class="contact-section">
+        <div class="reveal">
+            <h2>Ready for Enterprise Data?</h2>
+            <p>Our team will contact you within 12 hours for custom API integration.</p>
+
+            <div class="form-container">
+                <form id="leadForm">
+                    <div class="form-group">
+                        <label>Business Name</label>
+                        <input type="text" name="name" placeholder="AgriCorp Inc." required>
+                    </div>
+                    <div class="form-group">
+                        <label>Work Email</label>
+                        <input type="email" name="email" placeholder="ceo@agricorp.io" required>
+                    </div>
+                    <div class="form-group">
+                        <label>Inquiry Details</label>
+                        <textarea name="message" rows="4" placeholder="How can we help your business?"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">Initialize Integration</button>
+                    <p id="formStatus" style="margin-top: 1rem; font-size: 0.9rem; text-align: center; display: none;">
+                    </p>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="logo">AGRI<span>PULSE</span></div>
+        <div class="footer-links">
+            <a href="privacy.html">Privacy Protocol</a>
+            <a href="terms.html">Operating Terms</a>
+            <a href="#access">Contact Control</a>
+        </div>
+        <p style="margin-top: 3rem; font-size: 0.75rem; color: #475569;">
+            &copy; 2026 AgriPulse Framework. All intelligence verified via Decentralized Scraper Nodes.
+        </p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
