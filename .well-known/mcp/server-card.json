@@ -1,0 +1,19 @@
+{
+    "serverInfo": {
+        "name": "AgriPulse Analytics Node",
+        "version": "3.2.1"
+    },
+    "description": "Professional 1660 Ti-powered Indian Mandi data and AI intelligence node.",
+    "tools": [
+        {
+            "name": "predict_future_price",
+            "description": "Premium Neural-Edge Feature: High-Value AI Forecast using local GPU acceleration (NVIDIA 1660 Ti)."
+        },
+        {
+            "name": "get_mandi_prices",
+            "description": "Scrapes real-time Mandi price records from Agmarknet portals (Nagpur Focus)."
+        }
+    ],
+    "resources": [],
+    "prompts": []
+}

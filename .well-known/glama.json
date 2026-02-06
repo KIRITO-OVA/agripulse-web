@@ -1,0 +1,25 @@
+{
+    "name": "AgriPulse Analytics Node",
+    "version": "3.2.1",
+    "description": "Professional 1660 Ti-powered Indian Mandi data and AI intelligence node.",
+    "homepage": "https://lilyanna-subcubical-warren.ngrok-free.dev",
+    "iconUrl": "https://lilyanna-subcubical-warren.ngrok-free.dev/data/agripulse_hero_banner_1770282652449.png",
+    "repository": "https://github.com/KIRITO-OVA/agripulse-mcp",
+    "mcp": {
+        "protocol": "json-rpc",
+        "endpoint": "https://lilyanna-subcubical-warren.ngrok-free.dev/bot-request"
+    },
+    "capabilities": [
+        "real-time-pricing",
+        "market-forecasting",
+        "volatility-scoring"
+    ],
+    "author": "AgriPulse Labs",
+    "tags": [
+        "agriculture",
+        "india",
+        "mandi",
+        "ai-forecasting",
+        "1660-ti"
+    ]
+}
